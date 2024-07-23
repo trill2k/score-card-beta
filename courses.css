@@ -1,0 +1,60 @@
+.course-container {
+    max-width: 100%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;    
+}
+#holes-img {
+    width: 120px;
+    border-radius: 2em;
+}
+#pine-img {
+    width: 120px;
+    border-radius: 2em;
+}
+.course-box {
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2em;
+    background-color: rgba(188, 186, 186, 0.244);
+    align-items: center;
+    justify-content: center;
+}
+.course-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-course-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .5;
+    
+}
+.right-course-box {
+    text-align: center;
+    flex: 2;
+}
+.hero {
+    height: 100vh;
+    background-image: url('web-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+}

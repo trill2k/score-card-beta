@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 150px;
+        }
+        .tab-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="user-info">
+            <h2>Account</h2>
+            <div class="top-section">
+                <div class="left-box">
+                    <img src="holes.png" alt="Holes">
+                </div>
+                <div class="right-box">
+                    <p>User Name: <span class="user-name"></span></p>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <h2>Leaderboard</h2>
+                <div class="tabs">
+                    <button class="tab-button" onclick="showTab('white')">White Course</button>
+                    <button class="tab-button" onclick="showTab('red')">Red Course</button>
+                    <button class="tab-button" onclick="showTab('blue')">Blue Course</button>
+                </div>
+                <div id="white" class="tab-content">
+                    <h3>Top 10 Scores - White Course</h3>
+                    <div id="white-scores-list">
+                        <span class="label">User: </span>
+                    </div>
+
+                </div>
+                <div id="red" class="tab-content">
+                    <h3>Top 10 Scores - Red Course</h3>
+                    <div id="red-scores-list"></div>
+                </div>
+                <div id="blue" class="tab-content">
+                    <h3>Top 10 Scores - Blue Course</h3>
+                    <div id="blue-scores-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="sample.js"></script>
+</body>
+</html>

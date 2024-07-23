@@ -1,0 +1,365 @@
+.carousel {
+    position: relative;
+    width: 350px;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#title-image {
+    width: 250px;
+}
+/* Container for the carousel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+    height: 600px;
+}
+.carousel p {
+    font-size: 20px;
+}
+
+/* Each item in the carousel */
+.carousel-item {
+    flex: 0 0 100%; /* Each item takes full width of the carousel */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional: Visual feedback during swipe */
+.carousel-item.swiping {
+    transform: scale(0.98); /* Slightly scale down */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+#leaderboard {
+line-height: 25px;
+margin: auto;
+}
+#white-course-scores {
+    color: rgb(0, 255, 106);
+}
+#red-course-scores {
+    color: rgb(0, 255, 106);
+}
+#blue-course-scores {
+    color: rgb(0, 255, 106);
+}
+.card {
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+    margin-top: 2em;
+    background-color: #4e4e4e6a;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s ease;
+    display: none; /* Hide all cards initially */
+    transform: translateX(100%); /* Start cards off-screen to the right */
+}
+.course-box {
+    color: white;
+}
+.right-course-box1 {
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 2em;
+    background-color: rgba(188, 186, 186, 0.244);
+    align-items: center;
+    justify-content: center;
+}
+.right-course-box2 {
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 2em;
+    background-color: rgba(188, 186, 186, 0.244);
+    align-items: center;
+    justify-content: center;
+}
+.right-course-box3 {
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 2em;
+    background-color: rgba(188, 186, 186, 0.244);
+    align-items: center;
+    justify-content: center;
+}
+.right-box.light-mode {
+    border: 2px solid black;
+}
+.right-course-box1.light-mode{
+    color: black; /* Set text color to black in light mode */
+}
+.right-course-box2.light-mode{
+    color: black; /* Set text color to black in light mode */
+}
+.right-course-box3.light-mode{
+    color: black; /* Set text color to black in light mode */
+}
+.sign-link.light-mode {
+  color: black;
+  text-decoration: none;
+}
+
+.card.active {
+    right: 0;
+    display: block; /* Display the active card */
+    transform: translateX(0); /* Bring active card into view */
+    height: 60%;
+}
+.drop-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+.dropdown-content {
+    background-color: rgba(178, 178, 178, 0.352);
+    margin: auto;
+    margin: 20px 0 20px 0;
+}
+.dropdown-btn {
+    background-color: aliceblue;
+    width: 550px;
+    border-radius: 10px;
+    color: black;
+    
+}
+.card img {
+    width: 40%;
+    height: auto;
+}
+.card input {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border-radius: .5em;
+}
+.card button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    margin: 0;
+}
+.score-tally {
+    margin-top: 20px;
+    font-size: 24px;
+}
+.course-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.score-tally {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+    
+}
+.switch {
+    padding-bottom: 30px;
+}
+.hero h1 {
+    font-size: 60px;
+    padding: 1em 1em 0 1em;
+    font-weight: 100;
+    margin: auto;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 8px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  /* The round slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Slider handle */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  /* On checked - the slider moves */
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+button {
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+padding: 14px 25px 14px 25px;
+}
+.hero.light-mode {
+    background-image: url('webbackground-lightmode.png');
+    color: black;
+
+}
+.hero {
+    height: 100%;
+    background-image: url('web-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .arrow {
+        display: none;
+    }
+        #main-logo {
+            display: none;
+        } 
+        .off-screen-menu.active {
+           background-color: black;
+          
+        }
+    #submitscore button {
+        width: 20%;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+       
+        p {
+            font-size: 15px;
+            padding-right: 65px;
+        }
+        .carousel {
+            max-width: 420px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 8px;
+          }
+          
+          /* Hide default HTML checkbox */
+          .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          .hero {
+            height: 800px;
+          }
+          .card.active {
+            height: 100%;
+          }
+          
+ 
+          
+          /* The round slider */
+          .slider.round {
+            border-radius: 20px;
+          }
+          
+          .slider.round:before {
+            border-radius: 50%;
+          }
+          
+          /* Slider handle */
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+          }
+          
+          /* On checked - the slider moves */
+          input:checked + .slider {
+            background-color: #007bff;
+          }
+          
+          input:checked + .slider:before {
+            transform: translateX(26px);
+          }
+     
+    }
+  
+
+    

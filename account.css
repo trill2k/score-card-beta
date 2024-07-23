@@ -1,0 +1,76 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    gap: 10px;
+    font-size: 16px;
+
+}
+.top-section {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    height: 100px;
+}
+.hero h2 {
+    font-size: 50px;
+    margin: auto;
+    padding-top: 20px;
+    font-weight: 250;
+}
+.left-box {
+    flex: .25;
+    border: 1px solid white;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(188, 186, 186, 0.244);
+}
+.left-box img {
+    width: 75%;
+}
+.right-box {
+    flex: .75;
+    border: 1px solid white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(188, 186, 186, 0.244);
+    
+}
+.bottom-section {
+    width: 100%;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 1em;
+    background-color: rgba(188, 186, 186, 0.244);
+}
+#scores-list, h2{
+    padding: 10px;
+}
+#scores-list {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+@media (max-width: 600px) {
+    .user-info  {
+        width: 100%;
+        margin: 20px;
+        padding: 0 10px 0 10px;
+    }
+    .right-box p {
+        padding: 10px;
+    }
+    #scores-list {
+        margin: 0 20px 0 5px;
+        line-height: 30px
+    }
+
+}

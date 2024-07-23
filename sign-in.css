@@ -1,0 +1,170 @@
+
+.hero {
+    height: 100%;
+    background-image: url('web-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(254, 254, 254, 0.89);
+    transition: .3s ease;
+    margin: 0;
+    
+}
+.hero.light-mode {
+    background-image: url('webbackground-lightmode.png');
+    color: black;
+}
+.hero h2 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+.user-info {
+    background-color: #ffffff3e; /* Light grey background */
+    padding: 20px;
+    margin: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(103, 103, 103, 0.144);
+    width: 300px; /* Set a fixed width */
+    height: 450px;
+    font-size: 25px;
+    transition: .3s ease;
+    
+}
+.user-info p {
+font-size: 18px;
+}
+.user-info a {
+    text-decoration: underline;
+}
+form {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.toggle-container {
+    
+    padding-bottom: 50px;
+}
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px;
+}
+
+#sign-in-btn{
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#submit{
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#main-logo{
+    display: none;
+}  
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+a.light-mode {
+    color: black;
+  }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  /* The round slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Slider handle */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  /* On checked - the slider moves */
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+@media (max-width: 600px) {
+       
+        #main-logo {
+            display: none;
+        } 
+        .hero h2 {
+            padding-left: 1em;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+        p {
+            font-size: 15px;
+            padding-right: 65px;
+        }
+        .mobile-logo{
+            display: block;
+        }       
+     
+    }
+  

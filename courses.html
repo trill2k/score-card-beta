@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a id="acct" href="account.html">
+                <button>Account</button>
+              </a>      
+            
+              
+
+        </div>
+        <div class="center">
+            <p>User Name: <span class="user-name"></span></p>
+            <a href="sign-in.html"> <img id ="main-logo" src="mgsc.png"></a>
+        </div>
+        
+        <div class="off-screen-menu">
+                
+            <ul>
+                <img src="mgsc.png">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>                   
+            </ul>
+            <div class="btn-container">
+                
+                <a id="acct" href="account.html">
+                    <button>Account</button>
+                  </a>
+                  <button id="logout">Log Out</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="users">
+               
+            </div>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        
+    </div>
+    </nav>
+    <div class="hero">
+        
+        <div class="course-container">
+            <h1>Courses</h1>
+            <a href="white-course.html" class="course-link">
+            <div class="course-box">
+                <div class="left-course-box">
+                    <img id="holes-img" src="holes.png">
+                </div>
+            
+
+                <div class="right-course-box1">
+                    <h2>East Potomac White Course</h2>
+                    <h3>Par 33</h3> 
+                </div>
+
+            </div>
+            <a href="blue-course.html" class="course-link">
+                <div class="course-box">
+                    <div class="left-course-box">
+                        <img id="holes-img" src="blue-course.png">
+                    </div>
+    
+                    <div class="right-course-box2">
+                        <h2>East Potomac Blue Course</h2>
+                        <h3>Par 72</h3> 
+                    </div>
+                    
+                </div>
+                </a>
+                <a href="red-course.html" class="course-link">
+                    <div class="course-box">
+                        <div class="left-course-box">
+                            <img id="holes-img" src="red-course.png">
+                        </div>
+        
+                        <div class="right-course-box3">
+                            <h2>East Potomac Red Course</h2>
+                            <h3>Par 27</h3> 
+                        </div>
+                        
+                    </div>
+                </a>
+        </div>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script type="module" src="menu-auth.js" ></script>
+    <script src="menu.js"></script>
+    <script src="courses-light-dark.js"></script>
+</body>
+</html>

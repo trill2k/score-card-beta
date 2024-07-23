@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Account</title>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a id="acct" href="account.html">
+                <button>Account</button>
+            </a>
+        </div>
+        <div class="center">
+            <p>User Name: <span class="user-name"></span></p>
+            <a href="sign-in.html"><img id="main-logo" src="mgsc.png"></a>
+        </div>
+        <div class="off-screen-menu">
+            <ul>
+                <img src="mgsc.png">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+            <div class="btn-container">
+                <a id="acct" href="account.html">
+                    <button>Account</button>
+                </a>
+                <button id="logout">Log Out</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="users"></div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <h1>Account</h1>
+        <div class="user-info">
+           
+            <div class="top-section">
+                <div class="left-box">
+                    <img src="holes.png">
+                </div>
+                <div class="right-box">
+                    <p>User Name: <span class="user-name"></span></p>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <h2>Previous Rounds</h2>
+                <div id="scores-list">
+                    <!-- Scores will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script type="module" src="menu-auth.js"></script>
+    <script type="module" src="account.js"></script>
+    <script src="menu.js"></script>
+    <script src="light-dark-mode.js"></script>
+</body>
+</html>

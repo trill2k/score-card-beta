@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Potomac Red Course</title>
+    
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a id="acct" href="account.html">
+                <button>Account</button>
+              </a>      
+            
+              
+
+        </div>
+        <div class="center">
+            <p>User Name: <span class="user-name"></span></p>
+            <a href="sign-in.html"> <img id ="main-logo" src="mgsc.png"></a>
+        </div>
+        
+        <div class="off-screen-menu">
+                
+            <ul>
+                <img src="mgsc.png">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+            <div class="btn-container">
+                
+                <a id="acct" href="account.html">
+                    <button>Account</button>
+                  </a>
+                  <button id="logout">Log Out</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="users">
+               
+            </div>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        
+    </div>
+    </nav>
+<div class="hero">
+    <h1>East Potomac Red Course</h1>
+    <h2>Par 27</h2>
+    <div class="carousel" id="carousel">
+        <div class="card active" id="hole-1">
+            <h2>HOLE 1</h2>
+            <img src="progress.png" alt="Hole 1">
+            <p>Par 3</p>
+            <input type="number" id="score-1" min="1" max="10">
+            <button onclick="addScore(1)">Add</button>
+        </div>
+        <div class="card" id="hole-2">
+            <h2>HOLE 2</h2>
+            <img src="progress2.png" alt="Hole 2">
+            <p>Par 3</p>
+            <input type="number" id="score-2" min="1" max="10">
+            <button onclick="addScore(2)">Add</button>
+        </div>
+        <div class="card" id="hole-3">
+            <h2>HOLE 3</h2>
+            <img src="progress4.png" alt="Hole 3">
+            <p>Par 3</p>
+            <input type="number" id="score-3" min="1" max="10">
+            <button onclick="addScore(3)">Add</button>
+        </div>
+        <div class="card" id="hole-4">
+            <h2>HOLE 4</h2>
+            <img src="progress4.png" alt="Hole 4">
+            <p>Par 3</p>
+            <input type="number" id="score-4" min="1" max="10">
+            <button onclick="addScore(4)">Add</button>
+        </div>
+        <div class="card" id="hole-5">
+            <h2>HOLE 5</h2>
+            <img src="progress5.png" alt="Hole 5">
+            <p>Par 3</p>
+            <input type="number" id="score-5" min="1" max="10">
+            <button onclick="addScore(5)">Add</button>
+        </div>
+        <div class="card" id="hole-6">
+            <h2>HOLE 6</h2>
+            <img src="progress6.png" alt="Hole 6">
+            <p>Par 3</p>
+            <input type="number" id="score-6" min="1" max="10">
+            <button onclick="addScore(6)">Add</button>
+        </div>
+        <div class="card" id="hole-7">
+            <h2>HOLE 7</h2>
+            <img src="progress7.png" alt="Hole 7">
+            <p>Par 3</p>
+            <input type="number" id="score-7" min="1" max="10">
+            <button onclick="addScore(7)">Add</button>
+        </div>
+        <div class="card" id="hole-8">
+            <h2>HOLE 8</h2>
+            <img src="progress8.png" alt="Hole 8">
+            <p>Par 3</p>
+            <input type="number" id="score-8" min="1" max="10">
+            <button onclick="addScore(8)">Add</button>
+        </div>
+        <div class="card" id="hole-9">
+            <h2>HOLE 9</h2>
+            <img src="progress9.png" alt="Hole 9">
+            <p>Par 3</p>
+            <input type="number" id="score-9" min="1" max="10">
+            <button onclick="addScore(9)">Add</button>
+        </div>
+        <img src="arrow-left.png" class="arrow left" onclick="prevHole()">
+        <img src="arrow-right.png" class="arrow right" onclick="nextHole()">
+    </div>
+    <div class="score-tally">
+        Total Score: <span id="total-score">0</span><br>
+        <div class="button-container">
+        <button id="submitscore" onclick="submitScore()">Submit</button>
+    </div>
+    </div>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+
+<script type="module" src="menu-auth.js" ></script>
+    <script src="menu.js"></script>
+    <script type="module" src="holes.js"></script>
+    <script src="light-dark-mode.js"></script>
+</body>
+</html>
